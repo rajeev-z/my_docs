@@ -1,0 +1,47 @@
+To initialize a Git repository in a folder:
+mkdir project
+cd project
+
+Initialize a Git repository:
+git init //This command sets up a new Git repository in the folder by creating a .git directory.
+ls -a //To confirm the folder is now a Git repository
+
+Create a New File:
+vi test.txt
+
+Check File Status :
+git status //To see the current state of files in the repository (tracked or untracked)
+- New files will appear under "Untracked files"
+
+Add the File to Git Tracking:
+git add test.txt
+
+to add all new/modified files in the folder:
+git add .
+
+Commit the File:
+git commit -m "Adding test.txt " //After adding the file, commit it to save the changes locally with a message:
+
+Push the File to Remote Repository:
+git push origin main
+
+
+Git Clone:
+git clone is a command used to copy a repository from GitHub to your computer.
+
+git clone <URL> //This will create a new folder with the same name as the repository, containing all the
+files.
+
+git log //to check commit history
+
+git init For creating a new, empty repository locally.
+git clone For copying an existing repository (public or private).
+
+git branch //list your branches.
+
+git branch [branch-name] //to create newbranch
+
+git checkout //switch to another branch and check it out into your working directory
+
+
+
